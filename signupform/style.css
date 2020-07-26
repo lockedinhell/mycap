@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to bottom right, #f28d77, #f2c335, #f29a2e)
+    no-repeat;
+  z-index: 0;
+  background: url("C:/Users/ACER/Desktop/bg.png") no-repeat;
+  background-size: cover;
+  
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.6);
+  filter: blur(10px);
+  margin: -20px;
+  z-index: 10;
+}
+.container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 528px;
+  width: 497px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  position: absolute;
+  background: inherit;
+  overflow: hidden;
+  margin: auto;
+}
+
+.container > p:nth-child(1) {
+  color: #343436;
+  font-family: "Helvetica Neue LT Com";
+  font-weight: 750;
+  font-size: 30px;
+  position: fixed;
+  z-index: 11;
+  filter: opacity(70%);
+  margin: 30px 0 0 299px;
+}
+/* .foote>div{
+
+    background: url("C:/Users/ACER/Desktop/path.png") no-repeat;
+    z-index: 1;
+    position: absolute;
+    height: 855px;
+    width: 1080px;
+    top: 0;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+
+    
+} */
+.container > p:nth-child(2) {
+  color: #343436;
+  font-family: "Helvetica Neue LT Com";
+  font-weight: 750;
+  position: fixed;
+  font-size: 30px;
+  margin: 30px 0 0 109px;
+  z-index: 11;
+  filter: opacity(60%);
+  filter: blur(4px);
+  display: flex;
+}
+.formatt {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -75%);
+  z-index: 20;
+}
+
+.username,
+.email,
+.pass {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  font-family: "Helvetica Neue LT Com";
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 21px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 348px;
+  height: 38px;
+  border: none;
+  box-shadow: 3px, 4px, 4px #3d3d3d;
+}
+.us, .em, .pa{
+  display: border-box;
+  box-shadow:3px, 4px, 4px #3d3d3d;
+}
+
+
+.cta {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Helvetica Neue LT Com";
+  font-weight: 650;
+  z-index: 11;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  bottom: 0;
+  font-size: 16px;
+  transform: translate(-50%, 0);
+  display: block;
+  background-color: #275087;
+  width: 150px;
+  height: 38px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: none;
+  box-shadow: 3px, 4px, 6px, #275087;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 3px 4px 6px rgba(22, 22, 22, 0.1);
+}
+.cta:hover {
+  background-color: #275087;
+  box-shadow: 3px 4px 6px rgba(39, 80, 135, 0.4);
+  color: #fff;
+}
+
+.radio-inline {
+  position: absolute;
+  bottom: -35%;
+  left: 20%;
+  text-align: left;
+  /* padding: 0,0,5px,10px; */
+}
+.text{
+  /* position: absolute; */
+  margin-left: 10px;
+  margin-right: 40px;
+  font-family:"Helvetica Neue LT Com";
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #5D5D5D;
+}
+/* .radio-inline > input {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+} */
+
+.g,
+.a,
+.f {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Helvetica Neue LT Com";
+  font-weight: 700;
+  z-index: 11;
+  position: relative;
+  margin-top: 90%;
+  left: 20%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 126px;
+  height: 38px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: none;
+  box-shadow: 3px, 4px, 6px, #275087;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-right: 25px;
+  padding-left: 50px;
+  display: inline-block;
+  font-size: 14px;
+  
+}
+.g{
+  background-color: #42D778;
+}
+.f{
+  background-color: #2085E6;
+}
+.a{
+  background-color: #000;
+}
+.g:hover,
+.a:hover,
+.f:hover {
+  background-color: #275087;
+  box-shadow: 3px 4px 6px rgba(39, 80, 135, 0.4);
+  color: #fff;
+}
+.gg, .ff, .aa{
+  position: absolute;
+  z-index: 12;
+  background-color: white;
+  border-radius: 10px;
+  left:0px;
+  top: 0;
+  height: 38px;
+  width: 46px;
+}
+.gg>img , .ff>img , .aa>img{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 13;
+}
+
